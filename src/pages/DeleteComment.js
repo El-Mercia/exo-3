@@ -26,13 +26,12 @@ const DeleteComment = () => {
         <Container>
             <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="comment.title">
-                    <Form.Label>COMMENT TO DELETE</Form.Label>
+                    <Form.Label>DELETE YOUR COMMENTS</Form.Label>
                     <Form.Control
                         type="number"
                         name="id"
                         onChange={handleChange}
                         value={id}
-                        placeholder="Comment to delete"
                     />
                 </Form.Group>
                 <Button type="submit">Delete Comment</Button>
