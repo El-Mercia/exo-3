@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 
 const CreateComment = () => {
-    const [ article_id, setArticle_id ]     = useState("");
-    const [ content, setContent ] = useState("");
+    const [ article_id, setArticle_id ] = useState("");
+    const [ content, setContent ]       = useState("");
     const [ author_id, setAuthor_id ]   = useState("");
 
     const handleSubmit = (event) => {
@@ -47,7 +47,7 @@ const CreateComment = () => {
     return (
         <Container>
             <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="article_id.title">
+                <Form.Group controlId="comment.article_id">
                     <Form.Label>ARTICLE ID</Form.Label>
                     <Form.Control
                         type="number"
