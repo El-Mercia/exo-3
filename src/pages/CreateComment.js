@@ -57,7 +57,7 @@ const CreateComment = () => {
                         placeholder="Id of your article"
                 />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group controlId="comment.content">
                     <Form.Label>CONTENT</Form.Label>
                     <Form.Control
                         as="textarea"
@@ -67,7 +67,7 @@ const CreateComment = () => {
                         placeholder="Contents of your comments"
                     />
                 </Form.Group>
-                <Form.Group>
+                <Form.Group controlId="comment.author_id">
                     <Form.Label>AUTHOR ID</Form.Label>
                     <Form.Control
                         type="number"
