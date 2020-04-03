@@ -18,8 +18,8 @@ const App = () => {
       <Navigation/>
       <Switch>
         <Route exact path="/"          component={Home} />
-        <Route path="/comment/create" component={CreateComment}  />
-        <Route path="/comment/delete" component={DeleteComment}  />  
+        <Route path="./comments/create" component={CreateComment}  />
+        <Route path="./comments/delete" component={DeleteComment}  />  
         <Route path="*"                component={NotFound} /> 
       </Switch>
     </Router>
