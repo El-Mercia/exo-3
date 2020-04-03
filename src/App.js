@@ -1,29 +1,29 @@
 import React from 'react';
-
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+  BrowserRouter as Router,
+  Switch,
+  Route,
 } from 'react-router-dom';
-import Home          from './pages/Home';
-import CreateArticle from './pages/CreateComment';
-import DeleteArticle from './pages/DeleteComment';
-import NotFound      from './pages/NotFound';
 
 import Navigation from './components/Navigation';
+
+import Home          from './pages/Home';
+import CreateComment from './pages/CreateComment';
+import DeleteComment from './pages/DeleteComment';
+import NotFound      from './pages/NotFound';
 
 const App = () => {
   return (
     <Router>
-      <Navigation/>
+      <Navigation />
       <Switch>
-        <Route exact path="/"          component={Home} />
-        <Route path="./comments/create" component={CreateComment}  />
-        <Route path="./comments/delete" component={DeleteComment}  />  
-        <Route path="*"                component={NotFound} /> 
+        <Route exact path="/"          component={Home}          />
+        <Route path="/comments/create" component={CreateComment} />
+        <Route path="/comments/delete" component={DeleteComment} />
+        <Route path="*"                component={NotFound}      />
       </Switch>
     </Router>
- );
+  );
 }
 
 export default App;

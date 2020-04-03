@@ -84,4 +84,4 @@ const CreateComment = () => {
     )
 };
 
-export default CreateComments;
+export default CreateComment;
